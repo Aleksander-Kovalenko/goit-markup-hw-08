@@ -1,6 +1,5 @@
 .filter {
   margin-top: 95px;
-  margin-bottom: 35px;
 }
 .filter-list {
   justify-content: center;
@@ -21,7 +20,7 @@
   vertical-align: middle;
 
   color: $primary-text-color;
-  background-color: var(--portfolio-btn-bg-color);
+  background-color: $portfolio-btn-bg-color;
 
   @include font(500, 16px, 1.6, inherit);
 
