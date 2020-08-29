@@ -53,6 +53,10 @@
   /* Legacy iOS */
 }
 
+img {
+  display: block;
+}
+
 .flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
