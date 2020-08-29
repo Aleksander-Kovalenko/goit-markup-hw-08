@@ -1,0 +1,22 @@
+.advantages {
+  padding-bottom: 0;
+
+  &-item {
+    display: block;
+    flex: 1;
+  }
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &-item:nth-child(4n) {
+    margin-left: 0px;
+  }
+}
+
+.common-icon {
+  @include flex-direct;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  border-radius: 4px;
+}

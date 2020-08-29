@@ -1,0 +1,40 @@
+.social-list {
+  margin-top: 16px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.social-item {
+  display: block;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    fill: $white;
+    background-color: $icon-bg-color;
+    border: transparent;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.item-link {
+  @include flex-direct;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition: background-color $time-anim, fill $time-anim;
+
+  fill: $icon-passive-color;
+
+  &:hover,
+  &:focus {
+    fill: $button-color;
+    background-color: $icon-bg-color;
+    border: transparent;
+  }
+}

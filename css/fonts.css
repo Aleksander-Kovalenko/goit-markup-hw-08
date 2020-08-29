@@ -1,0 +1,45 @@
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway/raleway-v17-latin-700.eot");
+  src: local(""), url("../fonts/Raleway/raleway-v17-latin-700.woff2") format("woff2"), url("../fonts/Raleway/raleway-v17-latin-700.woff") format("woff"), url("../fonts/Raleway/raleway-v17-latin-700.ttf") format("truetype"), url("../fonts/Raleway/raleway-v17-latin-700.svg") format("svg");
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin-regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/Roboto/roboto-v20-latin-regular.woff") format("woff"), url("../fonts/Roboto/roboto-v20-latin-regular.ttf") format("truetype"), url("../fonts/Roboto/roboto-v20-latin-regular.svg") format("svg");
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin-500.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Roboto/roboto-v20-latin-500.woff2") format("woff2"), url("../fonts/Roboto/roboto-v20-latin-500.woff") format("woff"), url("../fonts/Roboto/roboto-v20-latin-500.ttf") format("truetype"), url("../fonts/Roboto/roboto-v20-latin-500.svg") format("svg");
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin-700.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin-700.woff") format("woff"), url("../fonts/roboto-v20-latin-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin-700.svg#Roboto") format("svg");
+}
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v20-latin-900.eot");
+  src: local("Roboto Black"), local("Roboto-Black"), url("../Roboto/roboto-v20-latin-900.woff2") format("woff2"), url("../Roboto/roboto-v20-latin-900.woff") format("woff"), url("../Roboto/roboto-v20-latin-900.ttf") format("truetype"), url("../Roboto/roboto-v20-latin-900.svg#Roboto") format("svg");
+}
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACR,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CAEX,gBAAgB,CAAE,eAAkB,CACpC,UAAU,CAAE,OAAO,CAAC,KAAK,CAAC,4BAA4B,CAMvD,AAdD,AAUE,SAVO,AAUN,UAAU,AAAC,CACV,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACrB",
+    "sources": [
+        "../sass/compoments/backdrop.scss"
+    ],
+    "names": [],
+    "file": "backdrop.min.css"
+}

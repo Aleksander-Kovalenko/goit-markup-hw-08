@@ -1,0 +1,33 @@
+.customers-list {
+  @include flex-direct;
+}
+
+.customers-item {
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.company-link {
+  @include flex-direct;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: $icon-passive-color;
+
+  transition: fill $time-anim, border $time-anim;
+
+  &:hover,
+  &:hover .icon,
+  &:focus,
+  &:focus .icon {
+    fill: $icon-bg-color;
+    border-color: $button-bg-color;
+  }
+}
