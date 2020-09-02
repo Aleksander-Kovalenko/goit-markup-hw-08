@@ -1,16 +1,17 @@
-@media (max-width:1200px){
-    .container{
-        width: 970px;
-    }
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
 
-@media (max-width: 992px){
-    .container{
-        width: 750px;
-    }
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
 }
 
-@media (max-width:767px)}
-.container{
+@media (max-width: 767px) {
+  .container {
     width: none;
+  }
 }
