@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  .icon {
+    vertical-align: middle;
+    transition: fill $time-anim;
+    fill: #ffffff;
+  }
+  &:hover .icon {
+    fill: $button-bg-color;
+  }
+}

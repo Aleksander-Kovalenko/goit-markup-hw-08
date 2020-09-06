@@ -2,6 +2,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+  color: #ffffff;
 
   background-color: #2f303a;
+
+  .footer-title {
+    @include list;
+    color: #ffffff;
+  }
 }
