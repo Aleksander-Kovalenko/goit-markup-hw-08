@@ -1,0 +1,42 @@
+.advantages {
+  // padding-bottom: 0;
+
+  @include for-size(tablet-landscape) {
+    .advantages-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      width: calc((100% - 30px) / 2);
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    @include for-size(desktop) {
+      &-item {
+        width: calc((100% - 30px * 3) / 4);
+      }
+      &-item:not(:last-child) {
+        margin-right: 30px;
+      }
+      &-item:nth-child(4n) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.common-icon {
+  width: 100%;
+  @include flex-direct;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  border-radius: 4px;
+}

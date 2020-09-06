@@ -1,0 +1,23 @@
+.logo {
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.title {
+  display: inline-block;
+  margin: 0;
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
+  &.item {
+    color: $accent-text-color;
+  }
+
+  @include for-size(desktop) {
+    font-size: 26px;
+  }
+}

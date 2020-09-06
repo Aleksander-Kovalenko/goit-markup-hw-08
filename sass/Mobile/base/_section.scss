@@ -1,0 +1,44 @@
+.section {
+  @include padding(60px, 0, 60px, 0);
+
+  font-weight: 700;
+  line-height: 1.16;
+
+  @include for-size(desktop) {
+    @include padding(90px, 0, 90px, 0);
+  }
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+  }
+}
+
+.section-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include for-size(tablet-landscape) {
+    text-align: start;
+  }
+}
+
+.section-text {
+  color: $secondary-text-color;
+
+  font-weight: 400;
+  line-height: 1.71;
+}

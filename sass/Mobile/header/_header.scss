@@ -1,0 +1,21 @@
+.header-page {
+  @include padding(15px, 0, 15px, 0px);
+  border-bottom: 1px solid #ececec;
+
+  .link {
+    display: block;
+
+    @include font(500, 18px, 1.2, 0.02em);
+
+    transition: color $time-anim, fill $time-anim;
+
+    color: $primary-text-color;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+    outline: transparent;
+  }
+}

@@ -1,0 +1,46 @@
+.customers-list {
+  @include for-size(tablet-portrait) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.customers-item {
+  display: block;
+
+  height: 90px;
+  margin-bottom: 30px;
+
+  @include for-size(tablet-portrait) {
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 180px) / 6);
+  }
+}
+
+.company-link {
+  @include flex-direct;
+
+  height: 100%;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: $icon-passive-color;
+
+  transition: fill $time-anim, border $time-anim;
+
+  &:hover,
+  &:hover .icon,
+  &:focus,
+  &:focus .icon {
+    fill: $icon-bg-color;
+    border-color: $button-bg-color;
+  }
+}

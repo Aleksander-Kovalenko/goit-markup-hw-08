@@ -1,0 +1,27 @@
+.button {
+  padding: 10px 30px;
+  min-width: 200px;
+  vertical-align: middle;
+
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $button-color;
+  background-color: $button-bg-color;
+
+  @include font(700, 16px, 1.87, 0.06em);
+
+  transition: color $time-anim, background-color $time-anim;
+
+  cursor: pointer;
+
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color;
+    color: $accent-text-color;
+    border: transparent;
+  }
+}

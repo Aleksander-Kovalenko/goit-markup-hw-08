@@ -1,0 +1,44 @@
+@mixin font($width, $size, $height, $spacing) {
+  font-weight: $width;
+  font-size: $size;
+  font-family: 'Roboto', sans-serif;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+@mixin visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@mixin flex-direct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
