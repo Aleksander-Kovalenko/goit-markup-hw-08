@@ -1,3 +1,15 @@
+.footer {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @include for-size(desktop) {
+    justify-content: space-between;
+  }
+}
+
 .footer-page {
   padding-top: 60px;
   padding-bottom: 60px;

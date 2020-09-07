@@ -12,4 +12,8 @@
   &:hover .icon {
     fill: $button-bg-color;
   }
+  @include for-size(desktop) {
+    display: inline-block;
+    margin: 0;
+  }
 }
