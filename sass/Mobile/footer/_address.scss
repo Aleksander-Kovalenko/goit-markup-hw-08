@@ -1,6 +1,4 @@
 .address {
-  margin-top: 20px;
-  margin-bottom: 60px;
   color: $white;
 
   line-height: 1.71;
@@ -8,7 +6,6 @@
   text-decoration: none;
 
   &.contact {
-    margin-bottom: 8px;
     color: rgba(255, 255, 255, 0.6);
   }
   @include for-size(desktop) {

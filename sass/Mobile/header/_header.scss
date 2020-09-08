@@ -1,12 +1,15 @@
 .header-page {
-  @include padding(15px, 0, 15px, 0px);
   border-bottom: 1px solid #ececec;
 
   .link {
     display: block;
     @include font(500, 18px, 1.2, 0.02em);
+    @include list;
     transition: color $time-anim, fill $time-anim;
     color: $primary-text-color;
+  }
+  .nav-link {
+    @include padding(17px, 0, 17px, 0px);
   }
 
   .link:hover,
@@ -14,5 +17,20 @@
     color: $accent-text-color;
     fill: $accent-text-color;
     outline: transparent;
+  }
+
+  @include for-size(tablet-landscape) {
+    .link {
+      font-size: 14px;
+    }
+    .nav-link {
+      @include padding(21px, 0, 21px, 0px);
+    }
+  }
+
+  @include for-size(desktop) {
+    .nav-link {
+      @include padding(25px, 0, 25px, 0px);
+    }
   }
 }

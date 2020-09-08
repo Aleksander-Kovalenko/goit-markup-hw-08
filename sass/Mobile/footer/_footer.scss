@@ -22,4 +22,7 @@
     @include list;
     color: #ffffff;
   }
+  @include for-size(desktop) {
+    text-align: start;
+  }
 }
