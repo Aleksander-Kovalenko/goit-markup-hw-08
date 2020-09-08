@@ -4,11 +4,8 @@
 
   .link {
     display: block;
-
     @include font(500, 18px, 1.2, 0.02em);
-
     transition: color $time-anim, fill $time-anim;
-
     color: $primary-text-color;
   }
 
