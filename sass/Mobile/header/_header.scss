@@ -1,5 +1,11 @@
+// @media (max-width: 767px) {
+//   .header-universal {
+//     display: none;
+//   }
+// }
+
 .header-page {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 3px solid #ececec;
 
   .link {
     display: block;
@@ -10,6 +16,19 @@
   }
   .nav-link {
     @include padding(17px, 0, 17px, 0px);
+  }
+  @media (max-width: 767px) {
+    position: relative;
+
+    & .main-nav {
+      display: flex;
+      min-height: 63px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-nav .link {
+      display: inline-block;
+    }
   }
 
   .link:hover,

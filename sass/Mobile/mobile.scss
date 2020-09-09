@@ -1,6 +1,6 @@
-@import '../compoments/breakpoints';
-@import '../untils/fonts';
-@import '../base/normalize';
+@import './untils/breakpoints';
+@import './untils/fonts';
+@import './untils/normalize';
 @import './untils/varibales';
 @import './mixin/mixin';
 @import './untils/list';
@@ -17,6 +17,7 @@
 @import './hero/hero';
 @import './base/section';
 @import './advantages/advantages';
+@import './work-team/work-team';
 @import './team/team';
 @import './team/team-list';
 @import './base/social.list';
@@ -26,3 +27,7 @@
 @import './footer/address';
 @import './footer/footer-form';
 @import './footer/button';
+@import '../compoments/backdrop';
+@import '../compoments/bckmodal';
+@import '../compoments/modal-closebtn';
+@import '../compoments/modalform';

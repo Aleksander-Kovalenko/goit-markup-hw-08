@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <link rel="stylesheet" href="./css/prof.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header-page">
-      <div class="container flexbox">
+      <div class="container">
         <nav class="main-nav">
           <a class="list" href="./index.html">
             <h1 class="title">
@@ -19,51 +18,46 @@
               Studio
             </h1>
           </a>
-          <ul class="site-nav content-box list">
+          <ul class="site-nav">
             <li class="item">
-              <a class="link list" href="./index.html">Студия</a>
+              <a class="link nav-link" href="./index.html">Студия</a>
             </li>
             <li class="item">
               <a
-                class="link current list"
+                class="link nav-link current"
                 href="./portfolio.html"
-                target="_blank"
                 rel="noopener noreferrer"
                 >Портфолио</a
               >
             </li>
             <li class="item">
-              <a
-                class="link list"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
+              <a class="link nav-link" href="" rel="noopener noreferrer"
                 >Контакты</a
               >
             </li>
           </ul>
+          <div class="contact">
+            <a class="btn link list" href="mailto:info@devstudio.com">
+              <svg class="button-icon" width="16" height="11">
+                <use href="./images/sprite.svg#icon-post-header"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="btn link list" href="tel:+380961111111">
+              <svg class="button-icon" width="10" height="15">
+                <use href="./images/sprite.svg#icon-tel-header"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </div>
         </nav>
-        <div class="contact content-box">
-          <a class="btn link" href="mailto:info@devstudio.com">
-            <svg class="button-icon" width="16" height="11">
-              <use href="./images/sprite.svg#icon-post-header"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="btn link" href="tel:+380961111111">
-            <svg class="button-icon" width="10" height="15">
-              <use href="./images/sprite.svg#icon-tel-header"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </div>
       </div>
     </header>
 
     <!-- UNIQUE-CONTENT -->
     <main>
       <div class="filter container">
-        <ul class="filter-list list content-box">
+        <ul class="filter-list">
           <li class="filter-item">
             <label for="all" class="filter-btn">Все</label>
             <input
@@ -118,17 +112,60 @@
       </div>
 
       <!-- TEAM-WORKS -->
-      <section class="container team-poff">
+      <section class="container team-professional">
         <h2 class="visually-hidden">Широкий спектр разработки</h2>
-        <ul class="list flexbox">
+        <ul class="work-list">
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/techno.jpg"
-                alt="Технокряк"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-1200.webp    1x,
+                    ./images/portfolio/port1/port1-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-768.webp    1x,
+                    ./images/portfolio/port1/port1-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-480.webp    1x,
+                    ./images/portfolio/port1/port1-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-1200.jpg    1x,
+                    ./images/portfolio/port1/port1-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-768.jpg    1x,
+                    ./images/portfolio/port1/port1-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port1/port1-480.jpg    1x,
+                    ./images/portfolio/port1/port1-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port1/port1-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -147,12 +184,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/neworl.jpg"
-                alt="New Orlean vs Golden Star"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-1200.webp    1x,
+                    ./images/portfolio/port2/port2-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-768.webp    1x,
+                    ./images/portfolio/port2/port2-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-480.webp    1x,
+                    ./images/portfolio/port2/port2-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-1200.jpg    1x,
+                    ./images/portfolio/port2/port2-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-768.jpg    1x,
+                    ./images/portfolio/port2/port2-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port2/port2-480.jpg    1x,
+                    ./images/portfolio/port2/port2-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port2/port2-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -163,9 +244,7 @@
             </div>
             <div class="card-subtitle">
               <a href="" class="list">
-                <h3 class="list work-title">
-                  Постер New Orlean vs Golden Star
-                </h3>
+                <h3 class="list work-title">Постер New Orlean vs Golden</h3>
                 <h4 class="list work-subtitle">Дизайн</h4>
               </a>
             </div>
@@ -173,12 +252,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/seafood.jpg"
-                alt="Seafood"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-1200.webp    1x,
+                    ./images/portfolio/port3/port3-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-768.webp    1x,
+                    ./images/portfolio/port3/port3-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-480.webp    1x,
+                    ./images/portfolio/port3/port3-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-1200.jpg    1x,
+                    ./images/portfolio/port3/port3-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-768.jpg    1x,
+                    ./images/portfolio/port3/port3-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port3/port3-480.jpg    1x,
+                    ./images/portfolio/port3/port3-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port3/port3-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -197,12 +320,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/prime.jpg"
-                alt="Prime"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-1200.webp    1x,
+                    ./images/portfolio/port4/port4-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-768.webp    1x,
+                    ./images/portfolio/port4/port4-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-480.webp    1x,
+                    ./images/portfolio/port4/port4-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-1200.jpg    1x,
+                    ./images/portfolio/port4/port4-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-768.jpg    1x,
+                    ./images/portfolio/port4/port4-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port4/port4-480.jpg    1x,
+                    ./images/portfolio/port4/port4-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port4/port4-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -221,12 +388,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/boxes.jpg"
-                alt="Boxes"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-1200.webp    1x,
+                    ./images/portfolio/port5/port5-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-768.webp    1x,
+                    ./images/portfolio/port5/port5-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-480.webp    1x,
+                    ./images/portfolio/port5/port5-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-1200.jpg    1x,
+                    ./images/portfolio/port5/port5-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-768.jpg    1x,
+                    ./images/portfolio/port5/port5-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port5/port5-480.jpg 1x,
+                    ./images/portfolio/port5/port5-480
+                  "
+                />
+                <img
+                  src="./images/portfolio/port5/port5-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -245,12 +456,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/borders.jpg"
-                alt="Inspiration has no Borders"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-1200.webp    1x,
+                    ./images/portfolio/port6/port6-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-768.webp    1x,
+                    ./images/portfolio/port6/port6-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-480.webp    1x,
+                    ./images/portfolio/port6/port6-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-1200.jpg    1x,
+                    ./images/portfolio/port6/port6-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-768.jpg    1x,
+                    ./images/portfolio/port6/port6-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port6/port6-480.jpg    1x,
+                    ./images/portfolio/port6/port6-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port6/port6-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -269,12 +524,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/book.jpg"
-                alt="Limited Edition"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-1200.webp    1x,
+                    ./images/portfolio/port7/port7-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-768.webp    1x,
+                    ./images/portfolio/port7/port7-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-480.webp    1x,
+                    ./images/portfolio/port7/port7-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-1200.jpg    1x,
+                    ./images/portfolio/port7/port7-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-768.jpg    1x,
+                    ./images/portfolio/port7/port7-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port7/port7-480.jpg    1x,
+                    ./images/portfolio/port7/port7-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port7/port7-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -293,12 +592,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/lab.jpg"
-                alt="LAB"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-1200.webp    1x,
+                    ./images/portfolio/port8/port8-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-768.webp    1x,
+                    ./images/portfolio/port8/port8-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-480.webp    1x,
+                    ./images/portfolio/port8/port8-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-1200.jpg    1x,
+                    ./images/portfolio/port8/port8-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-768.jpg    1x,
+                    ./images/portfolio/port8/port8-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port8/port8-480.jpg    1x,
+                    ./images/portfolio/port8/port8-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port8/port8-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -317,12 +660,56 @@
 
           <li class="work-item">
             <div class="action-link">
-              <img
-                src="./images/portfolio/pcc.jpg"
-                alt="Growing Business"
-                width="370"
-                height="285"
-              />
+              <picture class="img">
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-1200.webp    1x,
+                    ./images/portfolio/port9/port9-1200-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-768.webp    1x,
+                    ./images/portfolio/port9/port9-768-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-480.webp    1x,
+                    ./images/portfolio/port9/port9-480-2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-1200.jpg    1x,
+                    ./images/portfolio/port9/port9-1200-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-768.jpg    1x,
+                    ./images/portfolio/port9/port9-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/port9/port9-480.jpg    1x,
+                    ./images/portfolio/port9/port9-480-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/portfolio/port9/port9-1200.jpg"
+                  alt="best portfolio ever"
+                />
+              </picture>
+
               <div class="work-description">
                 <p class="describe-content">
                   Технокряк это современная площадка распространения
@@ -344,31 +731,29 @@
 
     <!-- FOOTER LIST -->
     <footer class="footer-page">
-      <div class="footer container flexbox">
+      <div class="footer container">
         <div class="footer-content">
-          <a class="list" href="./index.html">
-            <h1 class="footer-title">
+          <a class="footer-title" href="./index.html">
+            <h1>
               <span class="title item">Web</span>
               Studio
             </h1>
           </a>
-          <address>
-            <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
+          <address class="address">
+            <span>г. Киев, пр-т Леси Украинки, 26</span>
             <br />
-          </address>
-          <div class="list">
             <a class="address contact" href="mailto:info@devstudio.com">
               info@devstudio.com <br />
             </a>
             <a class="address contact" href="tel:+380961111111">
               +38 096 111 11 11
             </a>
-          </div>
+          </address>
         </div>
 
         <div class="footer-content">
-          <h3 class="footer-subtitle">Присоединяйтесь</h3>
-          <ul class="content-box social-list list">
+          <h3 class="footer-label">Присоединяйтесь</h3>
+          <ul class="social-list list">
             <li class="social-item">
               <a
                 class="item-link footer-icon"
@@ -441,5 +826,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/meny.js"></script>
   </body>
 </html>

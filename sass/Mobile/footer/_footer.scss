@@ -22,7 +22,7 @@
     @include list;
     color: #ffffff;
   }
-  @include for-size(desktop) {
+  @include for-size(tablet-landscape) {
     text-align: start;
   }
 }

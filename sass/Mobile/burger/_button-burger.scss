@@ -1,54 +1,41 @@
-.open-burger {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  display: inline-block;
-  vertical-align: middle;
+@media (max-width: 767px) {
+  .menu-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: fill $time-anim;
 
-  background-color: transparent;
+    &:hover,
+    &:focus {
+      fill: $icon-bg-color;
+    }
+  }
 
-  border: none;
-  outline: none;
+  .menu-btn .icon-close {
+    display: none;
+  }
 
-  cursor: pointer;
+  .menu-btn.is-open .icon-close {
+    display: block;
+  }
+  .menu-btn.is-open .icon-open {
+    display: none;
+  }
 
-  transition: fill $time-anim;
+  .menu-container {
+    display: none;
+    @include padding(60px, 0, 60px, 0);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: $primary-bg-color;
 
-  &:hover,
-  &:focus {
-    fill: $icon-bg-color;
+    &.is-open {
+      display: block;
+    }
   }
 }
-
-.close-burger {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  display: inline-block;
-  vertical-align: middle;
-
-  background-color: transparent;
-
-  border: none;
-  outline: none;
-
-  cursor: pointer;
-
-  transition: fill $time-anim;
-
-  &:hover,
-  &:focus {
-    fill: $icon-bg-color;
-  }
-}
-
-// &.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
-// svg {
-//   display: inline-block;
-// }
