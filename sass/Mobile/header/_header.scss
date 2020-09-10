@@ -1,11 +1,7 @@
-// @media (max-width: 767px) {
-//   .header-universal {
-//     display: none;
-//   }
-// }
-
 .header-page {
+  position: relative;
   border-bottom: 3px solid #ececec;
+  z-index: 99;
 
   .link {
     display: block;
@@ -17,9 +13,15 @@
   .nav-link {
     @include padding(17px, 0, 17px, 0px);
   }
-  @media (max-width: 767px) {
-    position: relative;
 
+  .link:hover,
+  .link:focus {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+    outline: transparent;
+  }
+
+  @media (max-width: 767px) {
     & .main-nav {
       display: flex;
       min-height: 63px;
@@ -30,14 +32,6 @@
       display: inline-block;
     }
   }
-
-  .link:hover,
-  .link:focus {
-    color: $accent-text-color;
-    fill: $accent-text-color;
-    outline: transparent;
-  }
-
   @include for-size(tablet-landscape) {
     .link {
       font-size: 14px;
