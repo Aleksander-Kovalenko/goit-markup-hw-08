@@ -1,4 +1,5 @@
 .address {
+  text-align: center;
   color: $white;
 
   line-height: 1.71;
@@ -7,6 +8,10 @@
 
   &.contact {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (max-width: 1200px) {
+    text-align: center;
   }
   @include for-size(desktop) {
     margin-bottom: 0;
