@@ -9,9 +9,12 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
+// * {
+//   outline: 2px solid tomato;
+// }
 body {
   margin: 0;
+
   color: $primary-text-color;
   background-color: $primary-bg-color;
 

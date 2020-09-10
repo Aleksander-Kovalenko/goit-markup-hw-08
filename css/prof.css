@@ -869,6 +869,7 @@ body {
 
 .team-professional {
   padding-top: 10px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 1200px) {

@@ -1,5 +1,6 @@
 .team-professional {
   padding-top: 10px;
+  padding-bottom: 60px;
   @include for-size(desktop) {
     padding-top: 30px;
     padding-bottom: 95px;
@@ -20,8 +21,6 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  // flex: 1;
 
   cursor: pointer;
 
