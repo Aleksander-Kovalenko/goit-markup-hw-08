@@ -15,8 +15,8 @@
   position: absolute;
 
   top: 50%;
-  transform: translateY(2px);
   left: 12px;
+  transform: translateY(2px);
   transition: fill $time-anim;
 
   .form-field:hover & {
@@ -79,9 +79,14 @@
 
   .label {
     @include flex-direct;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @include for-size(desktop) {
+      font-size: 14px;
+    }
   }
 
   .form-check {

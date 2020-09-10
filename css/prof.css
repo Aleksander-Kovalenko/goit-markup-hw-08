@@ -600,6 +600,113 @@ body {
   }
 }
 
+.burger-container {
+  padding-top: 17px;
+  padding-right: 0;
+  padding-bottom: 17px;
+  padding-left: 0px;
+}
+
+@media (min-width: 768px) {
+  .burger-container {
+    display: none;
+  }
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(47px);
+          transform: translateY(47px);
+  width: 100%;
+  padding: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.burger.is-hidden {
+  pointer-events: none;
+}
+
+.burger-modal {
+  margin: 0;
+  padding-top: 60px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  background-color: #fff;
+}
+
+.burger-modal .close-burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .menu-container {
+    display: none;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    max-width: 767px;
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+  .menu-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-btn:hover, .menu-btn:focus {
+    fill: #2196f3;
+  }
+  .menu-btn .icon-close {
+    display: none;
+  }
+  .menu-btn.is-open .icon-close {
+    display: block;
+  }
+  .menu-btn.is-open .icon-open {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
 .site-nav {
   margin-top: 0px;
   margin-bottom: 0px;
