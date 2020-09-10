@@ -8,8 +8,8 @@
 
   @include for-size(tablet-landscape) {
     display: flex;
+    margin-right: auto;
     margin-left: auto;
-    align-items: center;
 
     .item:not(:last-child) {
       margin-right: 50px;

@@ -1,8 +1,7 @@
 .main-nav {
-  position: relative;
-
   @include for-size(tablet-landscape) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
