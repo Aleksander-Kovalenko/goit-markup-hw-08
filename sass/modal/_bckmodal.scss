@@ -15,11 +15,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $time-anim;
+  @include for-size(phone-only) {
+    min-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
-
-    @include for-size(desktop) {
+    @include for-size(tablet-portrait) {
       min-width: 528px;
       min-height: 580px;
     }

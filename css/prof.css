@@ -583,11 +583,18 @@ body {
 }
 
 .title {
-  margin: 0;
-  color: #000000;
-  font-family: Raleway, sans-serif;
-  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
   font-weight: 700;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: Raleway, sans-serif;
+  color: #000000;
 }
 
 .title.item {
@@ -825,6 +832,12 @@ body {
   margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+  .filter-list .filter-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   .filter-list {
     -webkit-box-pack: center;
@@ -937,6 +950,10 @@ body {
 }
 
 .card-subtitle {
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 24px;
+  padding-left: 24px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -944,24 +961,21 @@ body {
 }
 
 .card-subtitle .work-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  color: #212121;
   font-weight: 700;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .card-subtitle .work-subtitle {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  color: #757575;
   font-weight: 400;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.87;
+  letter-spacing: inherit;
+  color: #757575;
 }
 
 .action-link {
@@ -970,14 +984,17 @@ body {
 }
 
 .work-description {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 77px 25px;
+  padding: 63px 25px;
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: 0.03em;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
@@ -990,6 +1007,16 @@ body {
 
 .work-description p {
   margin: 0;
+}
+
+@media (max-width: 479px) {
+  .work-description {
+    font-size: 14px;
+    padding-top: 45px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 768px) {

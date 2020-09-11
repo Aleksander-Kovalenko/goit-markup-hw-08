@@ -16,6 +16,11 @@
   .filter-item:nth-child(-n + 2) {
     margin-bottom: 0px;
   }
+  @media (max-width: 767px) {
+    .filter-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
   @include for-size(tablet-landscape) {
     justify-content: center;
   }
