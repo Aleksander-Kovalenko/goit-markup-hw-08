@@ -929,6 +929,10 @@ body {
   line-height: 1.71;
 }
 
+.advantages {
+  padding-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .advantages .advantages-list {
     display: -webkit-box;
