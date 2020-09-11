@@ -15,14 +15,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $time-anim;
+
   @include for-size(phone-only) {
     min-width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 40px;
+    margin: 15px;
   }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
+
     @include for-size(tablet-portrait) {
       min-width: 528px;
       min-height: 580px;
@@ -33,7 +35,7 @@
     display: block;
     text-align: center;
     padding: 0;
-    // @include margin(0, 0, 12px, 0);
+
     @include font(700, 20px, 1.5, 0.03em);
     align-items: center;
 

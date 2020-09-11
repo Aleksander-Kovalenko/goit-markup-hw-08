@@ -78,6 +78,10 @@
   margin-bottom: 30px;
 
   .label {
+    @include for-size(phone-only) {
+      display: inline;
+      vertical-align: middle;
+    }
     @include flex-direct;
     @include font(400, 12px, 1.7, 0.03em);
     color: #757575;
