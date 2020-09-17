@@ -736,12 +736,6 @@ body {
   background-color: #fff;
 }
 
-.burger-modal .close-burger {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 @media (max-width: 767px) {
   .menu-container {
     display: none;
